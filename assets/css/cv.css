@@ -1,0 +1,48 @@
+body {
+    background-color: #f2f2f2;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    cursor: pointer;
+}
+
+header:hover {
+    background-color: #332;
+}
+
+section {
+    padding: 20px;
+    background-color: #fff;
+    margin-bottom: 20px;
+    transition: transform 0.1s ease;
+}
+
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.download-btn {
+    background-color: #333;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+    background-color: #555;
+}
+
+.social-icons a {
+    margin: 0 5px;
+    color: #333;
+    text-decoration: none;
+    font-size: 20px;
+}
