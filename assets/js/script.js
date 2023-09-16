@@ -11,8 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
         │   ├── Blog.html
         │         ├──Plataformas.html
         ├── usr
-            ├── Sobre mi
-      `;
+            ├── Sobre mi`;
         typeMessage(directoryStructure, 0, consoleText, function () {
             menuItems.forEach(function (item, index) {
                 item.style.animationDelay = (index * 0.5) + "s";
