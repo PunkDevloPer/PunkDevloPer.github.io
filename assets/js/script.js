@@ -12,7 +12,6 @@ document.addEventListener("DOMContentLoaded", function () {
         │         ├──Plataformas.html
         ├── usr
             ├── Sobre mi
-            ├── redes sociales
       `;
         typeMessage(directoryStructure, 0, consoleText, function () {
             menuItems.forEach(function (item, index) {
