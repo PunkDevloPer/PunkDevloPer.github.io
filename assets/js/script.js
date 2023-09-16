@@ -5,14 +5,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
     consoleText.addEventListener("animationend", function () {
         var directoryStructure = `
-        ├──root
+        ├──/
         ├── home
         │   ├──index.html
         │   ├── Blog.html
         │         ├──Plataformas.html
-        ├── etc
-            ├── Quiensoy.html
-            ├── Contacto.html
+        ├── usr
+            ├── Sobre mi
+            ├── redes sociales
       `;
         typeMessage(directoryStructure, 0, consoleText, function () {
             menuItems.forEach(function (item, index) {
