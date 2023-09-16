@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HackTheBox</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="/assets/js/menu.js"></script>
+
+    <style>
+        .w3-sidebar {
+            background-color: #1f1f1f;
+            width: 130px;
+        }
+
+        .w3-sidebar h5 {
+            background-color: #303730;
+            color: white;
+            margin-top: 0;
+            padding: 10px;
+        }
+
+        .w3-sidebar .tablink {
+            width: 100%;
+            padding: 8px;
+            text-align: left;
+            border: none;
+            background-color: inherit;
+            font-size: 16px;
+            cursor: pointer;
+            color: #e5e5e5;
+        }
+
+        .w3-padding {
+            padding: 16px;
+        }
+
+        .w3-container.machine {
+            display: none;
+        }
+
+        .w3-container.first-paragraph {
+            background-color: #e5e5e5;
+            padding: 10px;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="w3-sidebar w3-bar-block w3-card">
+        <h5 class="w3-bar-item">Menu</h5>
+        <button class="w3-bar-item w3-button tablink" onclick="openmachine(event, 'MonitorsTwo')">Monitorstwo</button>
+        <button class="w3-bar-item w3-button tablink" onclick="openmachine(event, 'PC')">Maquina PC</button>
+        <button class="w3-bar-item w3-button tablink" onclick="openmachine(event, 'other')">Maquina $</button>
+        <a href="/plataformas/plataformas.html" class="w3-button w3-indigo"> Retroceder</a>
+
+    </div>
+
+    <div style="margin-left:130px">
+        <div class="w3-padding">
+            <div id="firstParagraph" class="w3-container first-paragraph w3-border w3-hover-red">
+                <h2>Area de apuntes de Vulnhub</h2>
+                <p>hack the box es una plataforma en línea diseñada para enseñar y practicar habilidades de seguridad
+                    informática y piratería ética. Proporciona una variedad de "salas" o áreas de aprendizaje donde los
+                    usuarios pueden sumergirse en diferentes aspectos de la seguridad informática y el hacking ético.
+                </p>
+                <a href="https://app.hackthebox.com/home" class="w3-button w3-indigo">Ingresar a Hack The Box</a>
+            </div>
+
+        </div>
+        <div class="article">
+            <div id="MonitorsTwo" class="w3-container machine">
+                <h2>MonitorsTwo</h2>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+
+            </div>
+        </div>
+
+        <div id="PC" class="w3-container machine">
+            <h2>Segunda maquina</h2>
+
+        </div>
+
+        <div id="other" class="w3-container machine">
+            <h2>Tercera maquina</h2>
+
+
+        </div>
+
+
+
+
+
+
+    </div>
+
+
+</body>
+
+</html>

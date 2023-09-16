@@ -1,0 +1,62 @@
+body {
+    font-family: monospace;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 100px;
+}
+
+.console {
+    font-size: 18px;
+    white-space: pre;
+    overflow: hidden;
+    position: relative;
+    left: 0;
+    width: 600px;
+    color: #66ff66;
+    animation: console-type 2s 2s steps(30) forwards;
+    text-align: left;
+    /* Agrega un borde derecho simulando el puntero */
+}
+
+.console-2 {
+    font-size: 18px;
+    white-space: pre;
+    overflow: hidden;
+    position: relative;
+    left: 0;
+    width: 600px;
+    color: #66ff66;
+    animation: console-type 1ms 1ms steps(20) forwards;
+    text-align: left;
+    margin-top: 300px;
+    /* Agrega margen superior para separar las animaciones */
+    opacity: 0;
+    /* Inicialmente, oculta la animación */
+}
+
+.menu-item {
+    display: none;
+    animation: menu-type 2ms steps(0) forwards;
+    color: #66ff66;
+}
+
+@keyframes console-type {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 400px;
+    }
+}
+
+@keyframes menu-type {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
