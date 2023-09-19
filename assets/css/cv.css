@@ -1,23 +1,15 @@
-body {
-    background-color: #f2f2f2;
+
+body{
+    background:#212529;
 }
 
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    cursor: pointer;
-}
-
-header:hover {
-    background-color: #332;
-}
 
 section {
     padding: 20px;
-    background-color: #fff;
+    background-color: #212529;
     margin-bottom: 20px;
     transition: transform 0.1s ease;
+    color: white;
 }
 
 
@@ -42,7 +34,7 @@ section {
 
 .social-icons a {
     margin: 0 5px;
-    color: #333;
+    color: #f0f0d8;
     text-decoration: none;
     font-size: 20px;
 }

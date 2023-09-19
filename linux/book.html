@@ -5,6 +5,7 @@
     <title>linux</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <script src="/assets/js/menu.js"></script>
 
     <style>
@@ -52,38 +53,53 @@
     <div class="w3-sidebar w3-bar-block w3-card">
         <h5 class="w3-bar-item">Menu</h5>
 
-        <button class="w3-bar-item w3-button tablink" onclick="openmachine(event, 'comandos')">Comandos</button>
-        <button class="w3-bar-item w3-button tablink" onclick="openmachine(event, 'Permisos')">Permisos</button>
-        <button class="w3-bar-item w3-button tablink" onclick="openmachine(event, 'Bash')">Bashscripting</button>
-        <a href="../Blog.html" class="w3-button w3-indigo"> Retroceder</a>
+        <button class="w3-bar-item w3-button w3-hover-teal tablink"
+            onclick="openmachine(event, 'comandos')">Comandos</button>
+        <button class="w3-bar-item w3-button w3-hover-blue tablink"
+            onclick="openmachine(event, 'Permisos')">Permisos</button>
+        <button class="w3-bar-item w3-butto w3-hover-brown tablink"
+            onclick="openmachine(event, 'Bash')">Bashscript</button>
 
+        <div class="w3-continer w3-padding-16 w3-center ">
+            <a href="/plataformas/plataformas.html" class="w3-button w3-indigo w3-round-xlarge 
+                fa fa-arrow-left w3-tiny w3-hover-red ">
+                Retroceder</a>
+        </div>
     </div>
 
     <div style="margin-left:130px">
         <div class="w3-padding">
-            <div id="firstParagraph" class="w3-container first-paragraph w3-border w3-hover-red">
-                <h2>Area de apuntes de linux</h2>
+            <div id="firstParagraph"
+                class="w3-container first-paragraph w3-border w3-hover-red w3-panel w3-round-xlarge">
+                <div class="w3-container">
+                    <h2>Area de apuntes de Linux</h2>
+                </div>
+
                 <p>Si estas aqui es por que supongo que ya sabes que es linux, si aun no sabes investiga un poco,
-                    internet tiene buenos recursos para aprender y todo esta compartido en linea muchas veces de forma
+                    internet tiene buenos recursos para aprender y todo esta compartido en linea muchas veces de
+                    forma
                     gratuita, por ello no voy a centrarme a explicar que es linux si no en su uso como tal para el
                     hacking etico
                 </p>
-                <a href="https://www.kali.org/" class="w3-button w3-indigo">obtener kali linux</a> <br> <br>
-                <div><a href="https://cmdchallenge.com/" target="_blank" class="w3-button w3-indigo">aprender mas</a>
+                <div class="w3-container w3-padding-16">
+                    <a href="https://cmdchallenge.com/" target="_blank"
+                        class="w3-button w3-indigo w3-round-xlarge">aprender mas</a>
+                    <a href="https://www.kali.org/" class="w3-round-xlarge w3-button w3-indigo">obtener kali linux</a>
                 </div>
             </div>
-
         </div>
-        <div class="article">
-            <div id="comandos" class="w3-container machine">
-                <h2>Comandos Basicos de linux</h2>
-                <p> Dentro de linux hay bastantes comandos para hacer las mismas cosas aplicando diferentes parametros,
-                    lo que permite una flexibilidad increible a la hora de realizar desde una sencilla navegacion entre
-                    directorios hasta una busqueda compleja de permisos, aqui me voy a centrar en los comandos mas
-                    basicos de linux
-                    para la navegacion en el sistema operativo desde la consola de comandos.</p>
+    </div>
 
-                <p>A continuación se presentan algunos comandos básicos de Linux:</p>
+    <div class=" w3-contaier w3-content w3-border">
+        <div id="comandos" class="w3-container machine">
+            <h2>Comandos Basicos de linux</h2>
+            <p> Dentro de linux hay bastantes comandos para hacer las mismas cosas aplicando diferentes parametros,
+                lo que permite una flexibilidad increible a la hora de realizar desde una sencilla navegacion entre
+                directorios hasta una busqueda compleja de permisos, aqui me voy a centrar en los comandos mas
+                basicos de linux
+                para la navegacion en el sistema operativo desde la consola de comandos.</p>
+            <p>A continuación se presentan algunos comandos básicos de Linux:</p>
+            <div class="w3-container  w3-content">
                 <ul>
                     <li>
                         <p <code>ls</code>: Muestra el contenido del directorio actual.</p>
@@ -129,9 +145,13 @@
                     </li>
                     <li><code>sudo</code>: Ejecuta un comando con privilegios de superusuario.</li>
                 </ul>
+
+
                 <p>Estos son solo algunos comandos básicos de Linux. Hay muchos más comandos y opciones disponibles.
-                    Puedes explorar más sobre ellos y sus opciones utilizando el comando <code>man</code> seguido del
-                    nombre del comando (por ejemplo, <code>man ls</code>) para acceder al manual del comando y obtener
+                    Puedes explorar más sobre ellos y sus opciones utilizando el comando <code>man</code> seguido
+                    del
+                    nombre del comando (por ejemplo, <code>man ls</code>) para acceder al manual del comando y
+                    obtener
                     más información.</p>
 
 
@@ -183,7 +203,8 @@
                 <p>Comando <code>cat</code>:</p>
                 <ul>
                     <li><code>cat archivo</code>: Muestra el contenido del archivo en la salida estándar.</li>
-                    <li><code>cat archivo1 archivo2</code>: Concatena el contenido de los archivos y lo muestra en la
+                    <li><code>cat archivo1 archivo2</code>: Concatena el contenido de los archivos y lo muestra en
+                        la
                         salida estándar.</li>
                     <li><code>cat archivo1 archivo2 &gt; archivo3</code>: Concatena el contenido de los archivos
                         <code>archivo1</code> y <code>archivo2</code> y lo redirige hacia el archivo
@@ -194,7 +215,8 @@
                 </ul>
                 <p>Comando <code>grep</code>:</p>
                 <ul>
-                    <li><code>grep patrón archivo</code>: Busca el patrón especificado dentro del archivo y muestra las
+                    <li><code>grep patrón archivo</code>: Busca el patrón especificado dentro del archivo y muestra
+                        las
                         líneas que coinciden.</li>
                     <li><code>grep -r patrón directorio</code>: Busca el patrón de manera recursiva en todos los
                         archivos dentro del directorio y muestra las líneas que coinciden.</li>
@@ -204,7 +226,8 @@
                 <p>Comando <code>cp</code>:</p>
                 <ul>
                     <li><code>cp archivo destino</code>: Copia el archivo en la ubicación de destino.</li>
-                    <li><code>cp archivo1 archivo2 directorio</code>: Copia los archivos en el directorio especificado.
+                    <li><code>cp archivo1 archivo2 directorio</code>: Copia los archivos en el directorio
+                        especificado.
                     </li>
                     <li><code>cp -r directorio1 directorio2</code>: Copia el directorio y su contenido de manera
                         recursiva.</li>
@@ -219,7 +242,8 @@
                 <p>Comando <code>rm</code>:</p>
                 <ul>
                     <li><code>rm archivo</code>: Elimina el archivo.</li>
-                    <li><code>rm -r directorio</code>: Elimina el directorio y su contenido de manera recursiva.</li>
+                    <li><code>rm -r directorio</code>: Elimina el directorio y su contenido de manera recursiva.
+                    </li>
                     <li><code>rm -f archivo</code>: Elimina el archivo sin solicitar confirmación.</li>
                 </ul>
                 <p>Comando <code>rmdir</code>:</p>
@@ -231,42 +255,64 @@
                 <p>Comando <code>chmod</code>:</p>
                 <ul>
                     <li><code>chmod permisos archivo</code>: Cambia los permisos del archivo según los permisos
-                        especificados. Los permisos pueden ser especificados en notación octal (por ejemplo, 755) o en
+                        especificados. Los permisos pueden ser especificados en notación octal (por ejemplo, 755) o
+                        en
                         notación simbólica (por ejemplo, u+rwx, g+rx, o o-w).</li>
                     <li><code>chmod +x archivo</code>: Otorga permisos de ejecución al archivo.</li>
-                    <li><code>chmod -r directorio</code>: Elimina los permisos de escritura y lectura en el directorio y
+                    <li><code>chmod -r directorio</code>: Elimina los permisos de escritura y lectura en el
+                        directorio y
                         su contenido de manera recursiva.</li>
                 </ul>
                 <p></p>
+            </div>
+        </div>
+    </div>
 
+    <!---->
+    <div class=" w3-contaier w3-content  ">
+        <div id="Permisos" class="w3-container machine">
+            <div class="w3-container  w3-content ">
+                <div class="w3-container">
+                    <h2>Permisos </h2>
+                    <p>En Linux, los permisos se utilizan para controlar el acceso a los archivos y directorios.</p>
+
+                    <h2>Tres tipos de permisos principales:</h2>
+                </div>
+
+                <ul>
+                    <li><strong>Permiso de lectura (read):</strong> Representado por "r". Permite ver el contenido de un
+                        archivo o directorio.</li>
+                    <li><strong>Permiso de escritura (write):</strong> Representado por "w". Permite modificar o
+                        eliminar un
+                        archivo, así como crear o eliminar archivos dentro de un directorio.</li>
+                    <li><strong>Permiso de ejecución (execute):</strong> Representado por "x". Permite ejecutar un
+                        archivo
+                        como programa o script, o ingresar a un directorio.</li>
+                </ul>
+
+                <h2>Estableciendo permisos en Linux:</h2>
+                <p>Los permisos se pueden establecer utilizando el comando <code>chmod</code> en la línea de comandos de
+                    Linux. Puedes usar el comando <code>chmod</code> junto con un número octal o un conjunto de letras
+                    para
+                    asignar los permisos adecuados.</p>
+
+                <h2>Ejemplo:</h2>
+                <p>Para dar permisos de lectura y escritura al propietario y solo permisos de lectura a los demás
+                    usuarios,
+                    puedes utilizar el siguiente comando:</p>
+                <pre><code>chmod 644 archivo.html</code></pre>
+            </div>
+        </div>
+    </div>
+    <div class=" w3-contaier w3-content w3-border ">
+        <div id="Bash" class="w3-container machine">
+            <div class="w3-container  w3-content ">
+                <div class="w3-container">
+                    <h2>Bash</h2>
+                </div>
             </div>
         </div>
 
-        <div id="Permisos" class="w3-container machine">
-            <h2>Permisos </h2>
-            <p>En Linux, los permisos se utilizan para controlar el acceso a los archivos y directorios.</p>
-
-            <h2>Tres tipos de permisos principales:</h2>
-            <ul>
-                <li><strong>Permiso de lectura (read):</strong> Representado por "r". Permite ver el contenido de un
-                    archivo o directorio.</li>
-                <li><strong>Permiso de escritura (write):</strong> Representado por "w". Permite modificar o eliminar un
-                    archivo, así como crear o eliminar archivos dentro de un directorio.</li>
-                <li><strong>Permiso de ejecución (execute):</strong> Representado por "x". Permite ejecutar un archivo
-                    como programa o script, o ingresar a un directorio.</li>
-            </ul>
-
-            <h2>Estableciendo permisos en Linux:</h2>
-            <p>Los permisos se pueden establecer utilizando el comando <code>chmod</code> en la línea de comandos de
-                Linux. Puedes usar el comando <code>chmod</code> junto con un número octal o un conjunto de letras para
-                asignar los permisos adecuados.</p>
-
-            <h2>Ejemplo:</h2>
-            <p>Para dar permisos de lectura y escritura al propietario y solo permisos de lectura a los demás usuarios,
-                puedes utilizar el siguiente comando:</p>
-            <pre><code>chmod 644 archivo.html</code></pre>
-
-        </div>
 </body>
 
 </html>

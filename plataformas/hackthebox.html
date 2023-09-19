@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <script src="/assets/js/menu.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
     <style>
         .w3-sidebar {
@@ -56,23 +57,34 @@
         <button class="w3-bar-item w3-button tablink" onclick="openmachine(event, 'MonitorsTwo')">Monitorstwo</button>
         <button class="w3-bar-item w3-button tablink" onclick="openmachine(event, 'PC')">Maquina PC</button>
         <button class="w3-bar-item w3-button tablink" onclick="openmachine(event, 'other')">Maquina $</button>
-        <a href="/plataformas/plataformas.html" class="w3-button w3-indigo"> Retroceder</a>
+        <div class="w3-continer w3-padding-16 w3-center ">
+
+            <a href="/plataformas/plataformas.html" class="w3-button w3-indigo w3-round-xlarge 
+            fa fa-arrow-left w3-tiny w3-hover-red ">
+                Retroceder</a>
+        </div>
+
 
     </div>
 
     <div style="margin-left:130px">
-        <div class="w3-padding">
-            <div id="firstParagraph" class="w3-container first-paragraph w3-border w3-hover-red">
+        <div class="w3-padding w3-round-xlarge">
+            <div id="firstParagraph"
+                class="w3-container first-paragraph w3-border w3-hover-red w3-panel w3-round-xlarge">
                 <h2>Area de apuntes de hack the box</h2>
                 <p>hack the box es una plataforma en línea diseñada para enseñar y practicar habilidades de seguridad
                     informática y piratería ética. Proporciona una variedad de "salas" o áreas de aprendizaje donde los
                     usuarios pueden sumergirse en diferentes aspectos de la seguridad informática y el hacking ético.
                 </p>
-                <a href="https://app.hackthebox.com/home" class="w3-button w3-indigo">Ingresar a Hack The Box</a>
+                <div class="w3-container">
+                    <a href="https://app.hackthebox.com/home" class="w3-button w3-indigo w3-round-xlarge">Ingresar a
+                        Hack The
+                        Box</a>
+                </div>
             </div>
 
         </div>
-        <div class="article">
+        <div class="article ">
             <div id="MonitorsTwo" class="w3-container machine">
                 <h2>MonitorsTwo</h2>
                 <p></p>
