@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HackTheBox</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="/assets/js/menu.js"></script>
+
+    <style>
+        .w3-sidebar {
+            background-color: #1f1f1f;
+            width: 130px;
+        }
+
+        .w3-sidebar h5 {
+            background-color: #303730;
+            color: white;
+            margin-top: 0;
+            padding: 10px;
+        }
+
+        .w3-sidebar .tablink {
+            width: 100%;
+            padding: 8px;
+            text-align: left;
+            border: none;
+            background-color: inherit;
+            font-size: 16px;
+            cursor: pointer;
+            color: #e5e5e5;
+        }
+
+        .w3-padding {
+            padding: 16px;
+        }
+
+        .w3-container.machine {
+            display: none;
+        }
+
+        .w3-container.first-paragraph {
+            background-color: #e5e5e5;
+            padding: 10px;
+            display: block;
+
+            table {
+                border-collapse: collapse;
+                width: 100%;
+            }
+
+            th,
+            td {
+                border: 1px solid #dddddd;
+                text-align: left;
+                padding: 8px;
+            }
+
+            th {
+                background-color: #f2f2f2;
+            }
+
+            a {
+                text-decoration: none;
+                color: #0000FF;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="w3-sidebar w3-bar-block w3-card">
+        <h5 class="w3-bar-item">Menu</h5>
+        <button class="w3-bar-item w3-button tablink" onclick="openmachine(event, 'youtube')">Youtube</button>
+        <button class="w3-bar-item w3-button tablink" onclick="openmachine(event, 'PC')">Web</button>
+        <a href="/plataformas/plataformas.html" class="w3-button w3-indigo"> Retroceder</a>
+
+    </div>
+
+    <div style="margin-left:130px">
+        <div class="w3-padding">
+            <div id="firstParagraph" class="w3-container first-paragraph w3-border w3-hover-red">
+                <h2>Area de Recursos</h2>
+                <p>
+                    Area de recursos para aprender y practicar habilidades de seguridad informatica y pirateriá con
+                    fines eticos y de aprendizaje
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class=" w3-contaier w3-content w3-border ">
+        <div id="youtube" class="w3-container machine">
+            <div class="w3-content ">
+                <div class="w3-container">
+                    <h2>Recursos de youtube para aprender hacking </h2>
+                </div>
+                <div class="w3-container">
+                    <table>
+                        <tr>
+                            <th>Conceptos Básicos de Redes</th>
+                            <th>Enlaces</th>
+                        </tr>
+                        <tr>
+                            <td>Fundamentos de redes</td>
+                            <td><a href="https://youtu.be/9k7TteZaXms?si=8mHFCRIwSa59sM73">Enlace</a></td>
+                        </tr>
+                        <tr>
+                            <td> curso de redes desde 0</td>
+                            <td><a
+                                    href="https://www.youtube.com/watch?v=um41JAqO42g&list=PLSvxAUzJ-XSfY0KpwV8SHBlyLVcrZkENc">Enlace</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td> Direcciones MAC</td>
+                            <td><a href="https://www.youtube.com/watch?v=ynQqQnxqaHE">Enlace</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Protocolo TCP con ejemplo</td>
+                            <td><a href="https://www.youtube.com/watch?v=eaqlfnvJQ1I">Enlace</a></td>
+                        </tr>
+                        <tr>
+                            <td>subneting</td>
+                            <td><a href="https://www.youtube.com/watch?v=CAwfexHl8FQ">Enlace</a></td>
+                        </tr>
+                        <tr>
+                            <td>calculo de un host</td>
+                            <td><a href="https://www.youtube.com/watch?v=2Z5ZlGG-qM0">Enlace</a></td>
+                        </tr>
+
+                        <tr>
+                            <th>Reconocimiento</th>
+
+                        </tr>
+                        <tr>
+                            <td>Fases de un ataque</td>
+                            <td><a
+                                    href="https://www.youtube.com/playlist?list=PLGupYdknMJl29WBnoPgEUqHmkEhuUyKRU">Enlace</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Curso de Nmap</td>
+                            <td><a
+                                    href="https://www.youtube.com/watch?v=LXVjhMc0ukg&list=PL1UnfB2evouFU3soYrISSJw5oqSZbb-nW">Enlace</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Contenedores</th>
+
+                        </tr>
+                        <tr>
+                            <td>Docker windows</td>
+                            <td><a href="https://www.youtube.com/playlist?list=PLu_htiBDhr8EpdB_xYvWGceFVpWGK8DkR					
+                                ">Enlace</a></td>
+                        </tr>
+
+                        <tr>
+                            <td>Docker Linux</td>
+                            <td><a href="https://www.youtube.com/playlist?list=PLu_htiBDhr8EpdB_xYvWGceFVpWGK8DkR					
+					
+                                ">Enlace</a></td>
+                        </tr>
+                        <tr>
+                            <th>Hacking etico</th>
+
+                        </tr>
+                        <tr>
+                            <td>Introduccion al hacking</td>
+                            <td><a href="https://www.youtube.com/playlist?list=PLUFdNvWy-5CEdZgke5zIYyrs-YUbgBnMS					
+					
+					
+                                ">Enlace</a></td>
+                        </tr>
+                        <tr>
+                            <th>protocolos de seguridad</th>
+
+                        </tr>
+                        <tr>
+                            <td>Protocolo SSL</td>
+                            <td><a href="https://www.youtube.com/watch?v=RMS5zBYQIqA					
+                                ">Enlace</a></td>
+                            <td><a href="https://www.youtube.com/watch?v=IDDmqlN-hF0					
+                                    ">Enlace</a></td>
+                        </tr>
+                        <tr>
+
+                            <td>Explotacion SSL</td>
+                            <td><a href="https://www.youtube.com/watch?v=X_qg_C00LXs">Enlace</a></td>
+                        </tr>
+                        <tr>
+                            <th>CMS y enumeracion</th>
+                        </tr>
+                        <tr>
+                            <td>Explotacion de un CMS</td>
+                            <td><a href="https://www.youtube.com/watch?v=liV4TOkfwA4					
+					
+                                "></a>Enlace</td>
+                        </tr>
+                        <tr>
+                            <th>tipos de CMS comunes</th>
+                        </tr>
+                        <tr>
+                            <td>CMS comunes</td>
+                            <td><a href="https://www.youtube.com/watch?v=Jf6_cLtZ8R0">Enlace</a></td>
+                        </tr>
+                        <tr>
+                            <th>Frameworks</th>
+                        </tr>
+                        <tr>
+                            <td>Metaxploit</td>
+                            <td><a href="https://www.youtube.com/playlist?list=PLXmaCit2vjBegoYUhr5Aab-5NHMEKfIh0					
+                                "> Enlace</a></td>
+                        </tr>
+                        <tr>
+                            <td>Burpsuite</td>
+                            <td><a href="https://www.youtube.com/playlist?list=PL4TbrTdoQBY_h0-ZxC0LbZ8Fsz7F91d1c">
+                                    Enlace</a></td>
+                        </tr>
+                        <tr>
+                            <td>sqlmap</td>
+                            <td><a href="https://www.youtube.com/playlist?list=PL1UnfB2evouFvcZWbxM7H8dDlEo1VmRms">
+                                    Enlace</a></td>
+                        </tr>
+
+
+                    </table>
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class=" w3-contaier w3-content w3-border ">
+        <div id="PC" class="w3-container machine">
+            <div class="w3-content ">
+                <div class="w3-container">
+                    <h2>Recursos de la web para aprender hacking </h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html>
