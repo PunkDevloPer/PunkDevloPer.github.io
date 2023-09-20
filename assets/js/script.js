@@ -9,9 +9,19 @@ document.addEventListener("DOMContentLoaded", function () {
         ├── home
         │   ├──index.html
         │   ├── Blog.html
-        │         ├──Plataformas.html
+        │   ├── Plataformas
+        │   │   ├── HackmyVM.html
+        │   │   ├── Tryhackme.html
+        │   │   ├── vulnhub.html
+        │   │   ├── Hackthebox.html
+        │   │   
+        │   ├── LINUX
+        │   │   ├── book.html
+        │   ├── PYTHON
+        │   │   ├── book.html
         ├── usr
-            ├── Sobre mi`;
+            ├── Sobre mi
+            │   ├── cv.html`;
         typeMessage(directoryStructure, 0, consoleText, function () {
             menuItems.forEach(function (item, index) {
                 item.style.animationDelay = (index * 0.5) + "s";
