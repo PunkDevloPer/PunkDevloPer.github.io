@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     var textToPrint = `
     Punkdev@github.io:~$ tree
+
     ├── home
     │   ├──index.html
     │   ├── Blog.html
@@ -19,6 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
     ├── usr
     │    ├── Sobre mi
     │    ├── cv.html
+    
     Punkdev@github.io:~$ cd Menu..
     
     
