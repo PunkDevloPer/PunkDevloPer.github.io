@@ -5,7 +5,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     consoleText.addEventListener("animationend", function () {
         var directoryStructure = `
-        ├──/
+        Punkdev@github.io:~$ tree
+
         ├── home
         │   ├──index.html
         │   ├── Blog.html
@@ -20,9 +21,8 @@ document.addEventListener("DOMContentLoaded", function () {
         │     ├── book.html
         ├── usr
         │    ├── Sobre mi
-        │      ├── cv.html
-
-        $>> Redireccionando ...`;
+        │    ├── cv.html
+        Punkdev@github.io:~$ cd Blog.html`;
         typeMessage(directoryStructure, 0, consoleText, function () {
             menuItems.forEach(function (item, index) {
                 item.style.animationDelay = (index * 0.5) + "s";
