@@ -26,7 +26,6 @@ body {
     left:0;
     background-color:#000;
     color: #66ff66;
-    animation: console-type 2s 2s steps(30) forwards;
     text-align: left;
     border-right: 1px solid #66ff66; /* Borde derecho simulando el puntero */
   }
@@ -46,21 +45,21 @@ body {
     margin-bottom: 20px;
     cursor: pointer;
     opacity: 0; /* Inicialmente oculto */
-    transform: translateX(-20px); /* Desplazado hacia la izquierda */
+    transform: translateX(-30px); /* Desplazado hacia la izquierda */
     animation: fadeIn 0.5s forwards; /* Nueva animación */
     text-decoration: none; /* Esto quitará el subrayado */
   }
   
   @keyframes fadeIn {
     100% {
-      opacity: 1;
-      transform: translateX(0);
+      opacity: 5;
+      transform: translateX(6);
     }
   }
   
   @keyframes slideIn {
     100% {
-      width: 109px;
+      width: 120px;
     }
   }
   

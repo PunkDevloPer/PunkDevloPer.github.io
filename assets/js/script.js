@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
             clearInterval(interval);
             setTimeout(function () {
                 menuContainer.style.display = "block"; // Mostrar el menú
-            }, 500);
+            }, 30);
         }
 
         consoleElement.scrollTop = consoleElement.scrollHeight;
