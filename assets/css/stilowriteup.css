@@ -1,0 +1,36 @@
+.w3-sidebar {
+    background-color: #1f1f1f;
+    width: 130px;
+}
+
+.w3-sidebar h5 {
+    background-color: #303730;
+    color: white;
+    margin-top: 0;
+    padding: 10px;
+}
+
+.w3-sidebar .tablink {
+    width: 100%;
+    padding: 8px;
+    text-align: left;
+    border: none;
+    background-color: inherit;
+    font-size: 16px;
+    cursor: pointer;
+    color: #e5e5e5;
+}
+
+.w3-padding {
+    padding: 16px;
+}
+
+.w3-container.machine {
+    display: none;
+}
+
+.w3-container.first-paragraph {
+    background-color: #e5e5e5;
+    padding: 10px;
+    display: block;
+}
