@@ -1,6 +1,6 @@
 body {
     font-family: monospace;
-    background-color: #000;
+    background-color:#000;
     color: #fff;
     text-align: center;
     padding: 50px;
@@ -8,8 +8,8 @@ body {
   }
   
   .menu-container {
-    
-    top:50;
+    position: absolute;
+    top:0;
     right: 0;
     height: 100%;
     background-color: #000;
@@ -22,8 +22,9 @@ body {
     font-size: 16px;
     white-space: pre;
     overflow: hidden;
-    position: relative;
-    left: 0;
+    position: absolute;
+    left:0;
+    background-color:#000;
     color: #66ff66;
     animation: console-type 2s 2s steps(30) forwards;
     text-align: left;
@@ -41,7 +42,7 @@ body {
   
   .menu-item {
     color: #66ff66;
-    font-size: 20px;
+    font-size: 16px;
     margin-bottom: 20px;
     cursor: pointer;
     opacity: 0; /* Inicialmente oculto */
@@ -59,7 +60,7 @@ body {
   
   @keyframes slideIn {
     100% {
-      width: 200px;
+      width: 109px;
     }
   }
   
@@ -68,7 +69,7 @@ body {
       width: 0;
     }
     100% {
-      width: 400px;
+      width: 350px;
     }
   }
   
