@@ -21,16 +21,4 @@
     color: #e5e5e5;
 }
 
-.w3-padding {
-    padding: 16px;
-}
 
-.w3-container.machine {
-    display: none;
-}
-
-.w3-container.first-paragraph {
-    background-color: #e5e5e5;
-    padding: 10px;
-    display: block;
-}

@@ -1,74 +1,77 @@
+
 body {
-    font-family: monospace;
-    background-color:#000;
-    color: #fff;
-    text-align: center;
-    padding: 50px;
-    margin: 0;
-  }
+  font-family: monospace;
+  background-color:#000;
+  color: #fff;
+  padding: 50px;
+  margin: 0;
+}
+.nav-item {
+  color: #66ff66;
+  font-size: 16px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  opacity: 0; /* Inicialmente oculto */
+  transform: translateX(30px); /* Desplazado hacia la izquierda */
+  animation: fadeIn 0.5s forwards; /* Nueva animación */
+  text-decoration: none; /* Esto quitará el subrayado */
+}
+
+.menu-container {
+  position: relative;
+  top:0;
+  right: 0;
+  background-color: #000;
+  padding: 10px;
+  box-sizing: border-box;
+  animation: slideIn 1s forwards; /* Nueva animación */
+}
+
+.console {
+  font-size: 16px;
+  position:relative;
+  left:0;
+  background-color:#000;
+  color: #66ff66;
   
-  .menu-container {
-    position: absolute;
-    top:0;
-    right: 0;
-    height: 100%;
-    background-color: #000;
-    padding: 10px;
-    box-sizing: border-box;
-    animation: slideIn 1s forwards; /* Nueva animación */
+  border-right: 1px solid #66ff66; /* Borde derecho simulando el puntero */
+}
+
+.menu {
+  list-style-type: none;
+  padding: 0;
+  background: #000;
+  margin: 0;
+  text-align: left;
+}
+
+.nav-link {
+  color: #66ff66;
+  font-size: 16px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  animation: fadeIn 0.5s forwards; /* Nueva animación */
+  text-decoration: none; /* Esto quitará el subrayado */
+}
+
+@keyframes fadeIn {
+  100% {
+    opacity: 5;
+    transform: translateX(6);
   }
-  
-  .console {
-    font-size: 16px;
-    white-space: pre;
-    overflow: hidden;
-    position: absolute;
-    left:0;
-    background-color:#000;
-    color: #66ff66;
-    text-align: left;
-    border-right: 1px solid #66ff66; /* Borde derecho simulando el puntero */
+}
+
+@keyframes slideIn {
+  90% {
+    width: 250px;
   }
-  
-  .menu {
-    list-style-type: none;
-    padding: 0;
-    background: #000;
-    margin: 0;
-    text-align: left;
-    text-decoration: none; /* Esto quitará el subrayado */
+}
+
+@keyframes console-type {
+  0% {
+    width: 0;
   }
-  
-  .menu-item {
-    color: #66ff66;
-    font-size: 16px;
-    margin-bottom: 20px;
-    cursor: pointer;
-    opacity: 0; /* Inicialmente oculto */
-    transform: translateX(-30px); /* Desplazado hacia la izquierda */
-    animation: fadeIn 0.5s forwards; /* Nueva animación */
-    text-decoration: none; /* Esto quitará el subrayado */
+  100% {
+    width: 250px;
   }
-  
-  @keyframes fadeIn {
-    100% {
-      opacity: 5;
-      transform: translateX(6);
-    }
-  }
-  
-  @keyframes slideIn {
-    100% {
-      width: 120px;
-    }
-  }
-  
-  @keyframes console-type {
-    0% {
-      width: 0;
-    }
-    100% {
-      width: 350px;
-    }
-  }
-  
+}
