@@ -1,9 +1,8 @@
 
 body {
+  background:#000;
   font-family: monospace;
-  background-color:#000;
   color: #fff;
-  padding: 50px;
   margin: 0;
 }
 .nav-item {
@@ -12,7 +11,7 @@ body {
   margin-bottom: 20px;
   cursor: pointer;
   opacity: 0; /* Inicialmente oculto */
-  transform: translateX(30px); /* Desplazado hacia la izquierda */
+  
   animation: fadeIn 0.5s forwards; /* Nueva animación */
   text-decoration: none; /* Esto quitará el subrayado */
 }
@@ -22,18 +21,16 @@ body {
   top:0;
   right: 0;
   background-color: #000;
-  padding: 10px;
   box-sizing: border-box;
-  animation: slideIn 1s forwards; /* Nueva animación */
+  
 }
 
 .console {
   font-size: 16px;
   position:relative;
-  left:0;
+  left:60;
   background-color:#000;
   color: #66ff66;
-  
   border-right: 1px solid #66ff66; /* Borde derecho simulando el puntero */
 }
 
@@ -62,16 +59,16 @@ body {
 }
 
 @keyframes slideIn {
-  90% {
-    width: 250px;
+  0% {
+    width: 150px;
   }
 }
 
 @keyframes console-type {
   0% {
-    width: 0;
+    width: 100;
   }
   100% {
-    width: 250px;
+    width: 100px;
   }
 }

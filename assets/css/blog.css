@@ -1,0 +1,25 @@
+
+.card {
+    color: #66ff66;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(22,9,121,1) 0%, rgba(0,0,0,0.5047152650122548) 0%); 
+}
+.card-img-top {
+    
+}
+.card-body {
+    color: #66ff66;
+    
+}
+.card-text {
+    
+}
+
+.btn-primary {
+    background: rgb(13,59,59);
+    background: radial-gradient(circle, rgba(13,59,59,0.8352474778974089) 0%, rgba(34,93,179,0.8716620437237395) 63%, rgba(34,93,179,0.8100373938637955) 83%); 
+}
+.nav-link {
+    color: #66ff66;
+}
+

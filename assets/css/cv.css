@@ -3,6 +3,9 @@ body{
     background:#212529;
 }
 
+.nav-link {
+    color: #66ff66;
+}
 
 section {
     padding: 20px;
