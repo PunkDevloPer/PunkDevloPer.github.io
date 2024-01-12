@@ -8,18 +8,16 @@ document.addEventListener("DOMContentLoaded", function () {
     ├── home
     │   ├──index.html
     │   ├── Blog.html
+    │       ├── Linux
+    │       ├── Python
+    │       ├── Plataformas
     │   ├── Plataformas
     │       ├── HackmyVM.html
     │       ├── Tryhackme.html
     │       ├── vulnhub.html
-    │       ├── Hackthebox.html   
-    ├── LINUX
-    │     ├── book.html
-    ├── PYTHON
-    │     ├── book.html
+    │       ├── vulnyx 
     ├── usr
     │    ├── Sobre mi
-    │    ├── cv.html
     
     Punkdev@github.io:~$ cd Menu..
     
