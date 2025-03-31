@@ -1,43 +1,57 @@
-
-body{
-    background:#212529;
+body {
+    background: #121212;
+    color: #f0f0f0;
+    font-family: 'Fira Code', monospace;
 }
 
 .nav-link {
-    color: #66ff66;
+    color: #66ff66 !important;
+    font-weight: 500;
 }
 
 section {
-    padding: 20px;
-    background-color: #212529;
+    padding: 30px;
+    background-color: #1e1e1e;
     margin-bottom: 20px;
-    transition: transform 0.1s ease;
-    color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(102, 255, 102, 0.2);
+    transition: transform 0.2s ease, background-color 0.3s ease;
 }
 
+section:hover {
+    transform: translateY(-4px);
+    background-color: #2a2a2a;
+}
 
 .navigation {
     display: flex;
     justify-content: center;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .download-btn {
-    background-color: #333;
-    color: #fff;
-    padding: 8px 16px;
-    border-radius: 4px;
+    background: linear-gradient(145deg, #222, #333);
+    color: #66ff66;
+    padding: 10px 20px;
+    border-radius: 6px;
     text-decoration: none;
-    transition: background-color 0.3s ease;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    border: 1px solid #66ff66;
 }
 
 .download-btn:hover {
-    background-color: #555;
+    background: #66ff66;
+    color: #000;
 }
 
 .social-icons a {
-    margin: 0 5px;
-    color: #f0f0d8;
-    text-decoration: none;
-    font-size: 20px;
+    margin: 0 10px;
+    color: #66ff66;
+    font-size: 24px;
+    transition: transform 0.2s ease;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
 }
