@@ -1,42 +1,44 @@
 document.addEventListener("DOMContentLoaded", function () {
-    var consoleElement = document.getElementById("console");
-    var menuContainer = document.getElementById("menu"); // Cambiado el selector
+    const consoleElement = document.getElementById("console");
+    const menuContainer = document.getElementById("menu");
 
-    var textToPrint = `
-    Punkdev@github.io:~$ tree
+    // Prevenir errores si los elementos no existen
+    if (!consoleElement || !menuContainer) return;
 
-    ├── home
-    │   ├──index.html
-    │   ├── Blog.html
-    │       ├── Linux
-    │       ├── Python
-    │       ├── Plataformas
-    │   ├── Plataformas
-    │       ├── HackmyVM.html
-    │       ├── Tryhackme.html
-    │       ├── vulnhub.html
-    │       ├── vulnyx 
-    ├── usr
-    │    ├── Sobre mi
-    
-    Punkdev@github.io:~$ cd Menu..
-    
-    
-    `;
+    const typingSpeed = 30; // Velocidad de escritura (ms por caracter)
 
-    var index = 0;
+    const textToPrint = `
+Punkdev@github.io:~$ tree
 
-    var interval = setInterval(function () {
+├── home
+│   ├── index.html
+│   ├── Blog.html
+│       ├── Linux
+│       ├── Python
+│       ├── Plataformas
+│   ├── Plataformas
+│       ├── HackmyVM.html
+│       ├── Tryhackme.html
+│       ├── vulnhub.html
+│       ├── vulnyx
+├── usr
+│   ├── Sobre mi
+
+Punkdev@github.io:~$ cd Menu..
+
+`;
+
+    let index = 0;
+
+    const interval = setInterval(() => {
         consoleElement.textContent += textToPrint[index];
         index++;
 
-        if (index === textToPrint.length) {
+        if (index >= textToPrint.length) {
             clearInterval(interval);
-            setTimeout(function () {
+            setTimeout(() => {
                 menuContainer.style.display = "block"; // Mostrar el menú
-            }, 30);
+            }, 300);
         }
-
-        consoleElement.scrollTop = consoleElement.scrollHeight;
-    }, 30);
+    }, typingSpeed);
 });
