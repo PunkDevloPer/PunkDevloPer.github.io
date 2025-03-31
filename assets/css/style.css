@@ -1,37 +1,39 @@
-
 body {
-  background:#000;
-  font-family: monospace;
+  background: #000;
+  font-family: 'Fira Code', monospace;
   color: #fff;
   margin: 0;
 }
-.nav-item {
+
+.nav-item,
+.nav-link {
   color: #66ff66;
   font-size: 16px;
   margin-bottom: 20px;
   cursor: pointer;
-  opacity: 0; /* Inicialmente oculto */
-  
-  animation: fadeIn 0.5s forwards; /* Nueva animación */
-  text-decoration: none; /* Esto quitará el subrayado */
+  opacity: 0;
+  animation: fadeIn 0.5s forwards;
+  text-decoration: none;
 }
 
 .menu-container {
   position: relative;
-  top:0;
+  top: 0;
   right: 0;
   background-color: #000;
   box-sizing: border-box;
-  
 }
 
 .console {
   font-size: 16px;
-  position:relative;
-  left:60;
-  background-color:#000;
+  position: relative;
+  left: 60px;
+  background-color: #000;
   color: #66ff66;
-  border-right: 1px solid #66ff66; /* Borde derecho simulando el puntero */
+  border-right: 1px solid #66ff66;
+  white-space: pre-wrap;
+  padding: 20px;
+  min-height: 200px;
 }
 
 .menu {
@@ -42,33 +44,23 @@ body {
   text-align: left;
 }
 
-.nav-link {
-  color: #66ff66;
-  font-size: 16px;
-  margin-bottom: 20px;
-  cursor: pointer;
-  animation: fadeIn 0.5s forwards; /* Nueva animación */
-  text-decoration: none; /* Esto quitará el subrayado */
-}
-
 @keyframes fadeIn {
-  100% {
-    opacity: 5;
-    transform: translateX(6);
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 
-@keyframes slideIn {
-  0% {
-    width: 150px;
+@media screen and (max-width: 768px) {
+  .nav-item,
+  .nav-link {
+    font-size: 14px;
   }
-}
 
-@keyframes console-type {
-  0% {
-    width: 100;
-  }
-  100% {
-    width: 100px;
+  .console {
+    font-size: 14px;
+    padding: 10px;
   }
 }
