@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CV - Juan David Hernández</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: #121212;
+      color: #e0e0e0;
+      font-family: 'Fira Code', monospace;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    h1,
+    h2 {
+      color: #66ff66;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 0.2em;
+    }
+
+    h2 {
+      font-size: 1.2rem;
+      margin-top: 2em;
+      border-bottom: 1px solid #333;
+      padding-bottom: 0.3em;
+    }
+
+    p,
+    li {
+      line-height: 1.6;
+    }
+
+    ul {
+      padding-left: 1.5em;
+    }
+
+    .section {
+      margin-bottom: 2rem;
+    }
+
+    .tag {
+      background-color: #1f1f1f;
+      color: #66ff66;
+      display: inline-block;
+      padding: 0.3em 0.6em;
+      margin: 0.2em;
+      border-radius: 6px;
+      font-size: 0.9rem;
+    }
+
+    .link {
+      color: #66ff66;
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Juan David Hernández</h1>
+    <p><strong>📍</strong> Castellón de la Plana · <strong>📧</strong> juandavidhernandezayala@gmail.com</p>
+    <p><a class="link" href="https://github.com/punkdevloper" target="_blank">GitHub: punkdevloper</a> | <a class="link" href="https://linkedin.com/in/juan-david-hernandez-77072913a" target="_blank">LinkedIn</a></p>
+
+    <div class="section">
+      <h2>Perfil Profesional</h2>
+      <p>Técnico en sistemas autodidacta con enfoque en Python, automatización y ciberseguridad. Experiencia en soporte técnico, Linux, Windows Server, scripting, redes y proyectos maker con Arduino y CNC. Entusiasta del hacking ético, proactivo, curioso, y en constante aprendizaje.</p>
+    </div>
+
+    <div class="section">
+      <h2>Experiencia Profesional</h2>
+      <ul>
+        <li><strong>Ejecutivo de Soporte – SIESA</strong> (2022–2023)<br />Infraestructura, Active Directory, AWS, automatización, soporte técnico.</li>
+        <li><strong>Especialista IT – Autónomo</strong> (2018–2022)<br />Arduino, ESP32, impresión 3D, soporte técnico, redes, Linux, automatización.</li>
+        <li><strong>Técnico en Sistemas – SENA (Prácticas)</strong> (2019–2020)<br />CCTV, cableado estructurado, impresoras, mantenimiento básico.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Formación Académica</h2>
+      <ul>
+        <li>Bootcamp AWS Cloud Practitioner – Factoría F5 (2024)</li>
+        <li>Bootcamp CyberSkills – Fundación Universia / Santander (En curso)</li>
+        <li>Técnico en Sistemas Informáticos – SENA (2019–2021)</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Habilidades Técnicas</h2>
+      <div>
+        <span class="tag">Python</span><span class="tag">Bash</span><span class="tag">SQL</span>
+        <span class="tag">Linux</span><span class="tag">Docker</span><span class="tag">Tkinter</span>
+        <span class="tag">Selenium</span><span class="tag">Laravel</span><span class="tag">MySQL</span>
+        <span class="tag">AWS</span><span class="tag">ESP32</span><span class="tag">Arduino</span>
+        <span class="tag">CNC</span><span class="tag">Redes</span>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Idiomas</h2>
+      <ul>
+        <li>Español: Nativo</li>
+        <li>Inglés: Técnico</li>
+        <li>Valenciano: Básico</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Extras</h2>
+      <ul>
+        <li>Participante activo en CTFs: TryHackMe, VulnHub, HackMyVM</li>
+        <li>Proyectos de automatización, scripts, GUI tools</li>
+        <li>Garantía Juvenil activa en España</li>
+      </ul>
+    </div>
+  </div>
+</body>
+
+</html>
