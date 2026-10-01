@@ -1,0 +1,11 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>OWON XDM1041 Controller | PunkDev</title><link rel="stylesheet" href="/assets/css/main-v2.css"></head><body><header class="navbar"><div class="shell nav-inner"><a class="brand" href="/index-v2.html">PunkDev_</a><nav class="nav-links"><a href="/index-v2.html">Inicio</a><a class="active" href="/projects-v2.html">Proyectos</a><a href="/blog-v2.html">Blog</a><a href="/cv-v2.html">CV</a></nav></div></header><main class="shell article"><p><a href="/projects-v2.html">← Volver a proyectos</a></p><header class="page-head"><span class="status">● active</span><h1>OWON XDM1041 Controller</h1><p class="subtitle">Python · SCPI · REST API · Instrumentación</p></header><section class="panel terminal-body"><h2>Descripción</h2><p>Proyecto para controlar y automatizar un multímetro OWON XDM1041 desde Linux. La base técnica se centra en comunicación SCPI, adquisición de medidas y una arquitectura que permita añadir GUI y API REST sin acoplarlas al transporte del instrumento.</p><h2>Objetivos</h2><ul><li>Comunicación fiable con el instrumento.</li><li>API interna limpia para medidas y configuración.</li><li>Registro y exportación de datos.</li><li>Interfaz gráfica desacoplada del controlador.</li><li>API REST para integraciones y automatización.</li></ul><h2>Arquitectura</h2><pre class="code">OWON XDM1041
+      │ SCPI
+      ▼
+ Instrument Driver
+      │
+ ┌────┼──────────┐
+ ▼    ▼          ▼
+ CLI  GUI      REST API
+      │
+      ▼
+ Logging / Export</pre></section></main><footer><div class="shell">PunkDev · OWON XDM1041 · <span data-year></span></div></footer><script src="/assets/js/main-v2.js"></script></body></html>
